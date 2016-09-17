@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="M4Y-Lb-cyx">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Evolve Countdown View Controller-->
+        <scene sceneID="cwh-vc-ff4">
+            <objects>
+                <viewController restorationIdentifier="EvolveCountdownViewController" storyboardIdentifier="EvolveCountdownViewController" id="M4Y-Lb-cyx" customClass="EvolveCountdownViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ft6-oW-KC0"/>
+                        <viewControllerLayoutGuide type="bottom" id="FKl-LY-JtV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nTk-8v-dTx">
+                                <rect key="frame" x="21" y="40" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="nTk-8v-dTx" secondAttribute="height" id="2JW-sB-gCW"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8qj-wZ-lW7" userLabel="icon" restorationIdentifier="btnIcon">
+                                <rect key="frame" x="21" y="40" width="120" height="120"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <state key="normal" backgroundImage="Icon.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mqb-Et-8i1" userLabel="first" restorationIdentifier="btnFirst">
+                                <rect key="frame" x="161" y="10" width="46" height="180"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m9H-eL-okp" userLabel="second" restorationIdentifier="btnSecond">
+                                <rect key="frame" x="227" y="85" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="m9H-eL-okp" firstAttribute="centerY" secondItem="S3S-Oj-5AN" secondAttribute="centerY" id="6Kj-X6-Mwp"/>
+                            <constraint firstItem="nTk-8v-dTx" firstAttribute="centerY" secondItem="S3S-Oj-5AN" secondAttribute="centerY" id="9ni-Rg-KNA"/>
+                            <constraint firstItem="Mqb-Et-8i1" firstAttribute="centerY" secondItem="S3S-Oj-5AN" secondAttribute="centerY" id="AYM-zM-YlT"/>
+                            <constraint firstItem="Mqb-Et-8i1" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" constant="10" id="GiN-Y7-4tD"/>
+                            <constraint firstItem="8qj-wZ-lW7" firstAttribute="centerY" secondItem="nTk-8v-dTx" secondAttribute="centerY" id="IgI-bJ-buo"/>
+                            <constraint firstItem="8qj-wZ-lW7" firstAttribute="height" secondItem="nTk-8v-dTx" secondAttribute="height" id="NVd-q9-jmf"/>
+                            <constraint firstItem="nTk-8v-dTx" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leadingMargin" constant="5" id="S8f-Se-GBR"/>
+                            <constraint firstItem="8qj-wZ-lW7" firstAttribute="centerX" secondItem="nTk-8v-dTx" secondAttribute="centerX" id="W34-xC-fNB"/>
+                            <constraint firstItem="8qj-wZ-lW7" firstAttribute="width" secondItem="nTk-8v-dTx" secondAttribute="width" id="dZx-3O-9GY"/>
+                            <constraint firstItem="m9H-eL-okp" firstAttribute="leading" secondItem="Mqb-Et-8i1" secondAttribute="trailing" constant="20" id="hbT-qX-zSO"/>
+                            <constraint firstItem="nTk-8v-dTx" firstAttribute="height" secondItem="S3S-Oj-5AN" secondAttribute="height" multiplier="0.6" id="t0r-nw-JLj"/>
+                            <constraint firstItem="Mqb-Et-8i1" firstAttribute="leading" secondItem="8qj-wZ-lW7" secondAttribute="trailing" constant="20" id="yWA-q1-jgc"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="200"/>
+                    <connections>
+                        <outlet property="imgThumb" destination="nTk-8v-dTx" id="name-outlet-nTk-8v-dTx"/>
+                        <outlet property="btnIcon" destination="8qj-wZ-lW7" id="name-outlet-8qj-wZ-lW7"/>
+                        <outlet property="btnFirst" destination="Mqb-Et-8i1" id="name-outlet-Mqb-Et-8i1"/>
+                        <outlet property="btnSecond" destination="m9H-eL-okp" id="name-outlet-m9H-eL-okp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="967" y="300.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Icon.png" width="57" height="57"/>
+    </resources>
+</document>
